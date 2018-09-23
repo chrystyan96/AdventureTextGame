@@ -119,11 +119,7 @@ public class AdventureText implements Runnable{
                                     + " estômago se levante e o vento passe por seus ouvidos.-"
                                     + "ISSO NÃO É BOM ==> Digite 1Z");
                             break;
-                            
-                        case "4C":
-                            write.println("");
-                            break;
-                            
+
                         case "5A":
                             write.println("Você corre e o túnel sobe em um declive e ao redor em uma espécie de "
                                     + "escada em espiral feita de pedras.-"
@@ -144,7 +140,6 @@ public class AdventureText implements Runnable{
                                     + " estômago se levante e o vento passe por seus ouvidos.-"
                                     + "ISSO NÃO É BOM ---> Digite 1Z");
                             break;
-                            
                             
                         case "1Z":
                             write.println("Os ecos do seu último grito foram tudo o que você ouviu antes"
