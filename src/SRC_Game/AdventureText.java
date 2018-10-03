@@ -27,135 +27,157 @@ public class AdventureText implements Runnable{
                     + "Digite 0 para sair");
             
             while (true){
+                String text = "";
                 String s = read.nextLine().toUpperCase();
                 if(s.equalsIgnoreCase("0")){
                     break;
                 } else{
                     switch (s){
                         case "1":
-                            write.println("Você está em uma caverna e vê dois buracos que podem ser escalados. -"
+                            text = "Você está em uma caverna e vê dois buracos que podem ser escalados. -"
                                     + "O que você vai fazer??? -"
                                     + "Digite 1A para escalar o buraco da esquerda-"
-                                    + "Digite 2A para escalar o buraco da direita");
+                                    + "Digite 2A para escalar o buraco da direita";
+                            write.println(text);
                                 break;
                             
                         case "1A":
-                            write.println("Você vê uma lagoa na sala mal iluminada.-"
+                            text = "Você vê uma lagoa na sala mal iluminada.-"
                                     + "Há uma luz vindo de dentro da lagoa.-"
                                     + "Há também outro buraco para escalar.-"
                                     + "O que você vai fazer??? -"
                                     + "Digite 1B para mergulhar na lagoa -"
-                                    + "Digite 2B para escalar o outro buraco");
+                                    + "Digite 2B para escalar o outro buraco";
+                            write.println(text);
                             break;
                             
                         case "2A":
-                            write.println("Você se encontra em um abismo vertical.- Você pode subir ou descer. -"
+                            text = "Você se encontra em um abismo vertical.- Você pode subir ou descer. -"
                                     + "O que você vai fazer??? -"
                                     + "Digite 3A para subir -"
-                                    + "Digite 4A para descer");
+                                    + "Digite 4A para descer";
+                            write.println(text);
                             break;
                             
                         case "1B":
-                            write.println("Você mergulha profundamente e através de um buraco submerso,-"
+                            text = "Você mergulha profundamente e através de um buraco submerso,-"
                                     + "você é levado a outra sala da caverna quando você submerge.-"
-                                    + "Digite 1C para sair da agua");
+                                    + "Digite 1C para sair da agua";
+                            write.println(text);
                             break;
                             
                         case "2B":
-                            write.println("O buraco faz um loop em torno de um arco e se conecta com outro túnel na caverna-."
+                            text = "O buraco faz um loop em torno de um arco e se conecta com outro túnel na caverna-."
                                     + "Você sente partes do piso rangendo e se movendo embaixo de você enquanto anda.-"
                                     + "RUN ==> 5A-"
-                                    + "PISE COM CUIDADO ==> 6A");
+                                    + "PISE COM CUIDADO ==> 6A";
+                            write.println(text);
                             break;
                             
                         case "1C":
-                            write.println("A escuridão nesta sala estão ficando mais forte e-"
+                            text = "A escuridão nesta sala estão ficando mais forte e-"
                                     + "você começa a gritar para ver se o eco lhe-"
                                     + "dirá o tamanho do espaço em que você se encontra. -"
                                     + "Digite 1D para continuar gritando -"
-                                    + "Digite 2D para andar pelo escuro");
+                                    + "Digite 2D para andar pelo escuro";
+                            write.println(text);
                             break;
                             
                         case "2D":
-                             write.println("Você anda pelo escuro e vê uma pequena luz brilhante a distância.- "
+                            text = "Você anda pelo escuro e vê uma pequena luz brilhante a distância.- "
                                     + "Ao se aproximar dela, percebe que encontrou um elevador e-"
                                     + "essa luz vem de um botão -"
-                                    + "Digite 2Z para usar o elevador");
+                                    + "Digite 2Z para usar o elevador";
+                             write.println(text);
                             break;
                             
                         case "1D":
-                            write.println("Depois de gritar por algum tempo você ouve algo gritar de volta,-"
+                            text = "Depois de gritar por algum tempo você ouve algo gritar de volta,-"
                                     + "e depois disso tudo ficou eternamente escuro. YOU DIED!!! -"
-                                    + "ISSO NÃO É BOM ==> Digite 1Z");
+                                    + "ISSO NÃO É BOM ==> Digite 1Z";
+                            write.println(text);
                             break;
                         
                         case "3A":
-                            write.println("Você não pode dizer se está vendo fantasmas ou neblina,-"
+                            text = "Você não pode dizer se está vendo fantasmas ou neblina,-"
                                     + "mas é difícil ver através dessas nuvens em movimento.-"
                                     + "Você sente o seu caminho ao longo da parede e pensa que"
                                     + " encontrou uma superfície plana e lisa.-"
                                     + "Digite 3B para examinar a superfície -"
-                                    + "Digite 4B para continuar procurando.");
+                                    + "Digite 4B para continuar procurando.";
+                            write.println(text);
                             break;
                             
                         case "3B":
-                            write.println("Você examina a superfície e descobre um botão redondo. -"
+                            text = "Você examina a superfície e descobre um botão redondo. -"
                                     + "Você pressiona o botão.-Uma porta secreta se abre. -"
                                     + "Você entra na sala com um piso plano e paredes.-"
                                     + "Tem um brilho laranja iluminando-o.-"
-                                    + "Você achou ==> Digite 2Z?");
+                                    + "Você achou ==> Digite 2Z?";
+                            write.println(text);
                             break;
                             
                         case "4A":
-                            write.println("A escuridão nesta sala estão ficando mais forte e-"
+                            text = "A escuridão nesta sala estão ficando mais forte e-"
                                     + "você começa a gritar para ver se o eco lhe-"
                                     + "dirá o tamanho do espaço em que você se encontra. -"
                                     + "Digite 1D para continuar gritando -"
-                                    + "Digite 2D para andar pelo escuro");
+                                    + "Digite 2D para andar pelo escuro";
+                            write.println(text);
                             break;
                             
                         case "4B":
-                            write.println("Você continua caminhando até que o solo embaixo ceda e seu"
+                            text = "Você continua caminhando até que o solo embaixo ceda e seu"
                                     + " estômago se levante e o vento passe por seus ouvidos.-"
-                                    + "ISSO NÃO É BOM ==> Digite 1Z");
+                                    + "ISSO NÃO É BOM ==> Digite 1Z";
+                            write.println(text);
                             break;
 
                         case "5A":
-                            write.println("Você corre e o túnel sobe em um declive e ao redor em uma espécie de "
+                            text = "Você corre e o túnel sobe em um declive e ao redor em uma espécie de "
                                     + "escada em espiral feita de pedras.-"
-                                    + "CONTINUA CORRENDO ---> 5B");
+                                    + "CONTINUA CORRENDO ---> 5B";
+                            write.println(text);
                             break;
                         
                         case "5B":
-                            write.println("Você não pode dizer se está vendo fantasmas ou neblina,"
+                            text = "Você não pode dizer se está vendo fantasmas ou neblina,"
                                     + " mas é difícil ver através dessas nuvens em movimento. -"
                                     + "Você sente o seu caminho ao longo da parede e pensa que"
                                     + " encontrou uma superfície plana e lisa.-"
                                     + "Digite 3B para examinar a superfície -"
-                                    + "Digite 4B para continuar procurando.");
+                                    + "Digite 4B para continuar procurando.";
+                            write.println(text);
                             break;
                             
                         case "6A":
-                            write.println("Você continua caminhando até que o solo embaixo ceda e seu"
+                            text = "Você continua caminhando até que o solo embaixo ceda e seu"
                                     + " estômago se levante e o vento passe por seus ouvidos.-"
-                                    + "ISSO NÃO É BOM ---> Digite 1Z");
+                                    + "ISSO NÃO É BOM ---> Digite 1Z";
+                            write.println(text);
                             break;
                             
                         case "1Z":
-                            write.println("Os ecos do seu último grito foram tudo o que você ouviu antes"
+                            text = "Os ecos do seu último grito foram tudo o que você ouviu antes"
                                     + " que a escuridão eterna o atingisse."
                                     + " YOU DIED!!! -"
                                     + "Digite 1 para jogar de novo-"
-                                    + "Digite 0 para sair");
+                                    + "Digite 0 para sair";
+                            write.println(text);
                             break;
                             
                         case "2Z":
-                            write.println("Quando seus olhos se ajustam, você começa a ver que existem "
+                            text = "Quando seus olhos se ajustam, você começa a ver que existem "
                                     + "instrumentos científicos na sala.-"
                                     + "Você encontra a máquina do tempo que você precisa! -"
                                     + "YOU WIN -"
                                     + "Digite 1 para jogar de novo-"
-                                    + "Digite 0 para sair");
+                                    + "Digite 0 para sair";
+                            write.println(text);
+                            break;
+                            
+                        default:
+                            write.println(text);
                             break;
                     }
                 }
